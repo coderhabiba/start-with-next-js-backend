@@ -35,7 +35,7 @@ let db;
 async function connectDB() {
   if (db) return db;
   await client.connect();
-  db = client.db('emeraldDB');
+  db = client.db('emerald');
   return db;
 }
 
